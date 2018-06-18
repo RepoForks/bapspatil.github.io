@@ -1,0 +1,21 @@
+{
+    "name": "Bapusaheb Patil",
+    "short_name": "Bapusaheb Patil",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#f70000",
+    "background_color": "#f70000",
+    "start_url": "https://bapspatil.com",
+    "display": "standalone",
+    "orientation": "portrait"
+}
