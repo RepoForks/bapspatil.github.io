@@ -31,12 +31,12 @@ self.addEventListener('fetch', function (event) {
     );
 });
 
-self.addEventListener('activate',function(e){
+self.addEventListener('activate', function (e) {
     console.log('Activating...');
     e.waitUntil(
-        caches.keys().then(function(keyList){
-            return Promise.all(keyList.map(function(key){
-                if(key !== cacheName){
+        caches.keys().then(function (keyList) {
+            return Promise.all(keyList.map(function (key) {
+                if (key !== cacheName) {
                     console.log('Removing old cached files...');
                     return caches.delete(key);
                 }
@@ -44,4 +44,27 @@ self.addEventListener('activate',function(e){
         })
     );
     self.clients.claim();
-})
+});
+
+
+// Firebase 
+importScripts('https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/5.0.4/firebase-messaging.js');
+
+firebase.initializeApp({
+    'messagingSenderId': '514459664316'
+});
+var messaging = firebase.messaging();
+
+messaging.setBackgroundMessageHandler(function (payload) {
+    console.log('[Firebase] Received background message.', payload);
+    var notificationTitle = 'Bapusaheb Patil - New notification';
+    var notificationOptions = {
+        body: 'You have a new notification from Bapusaheb Patil!',
+        icon: 'img/bapspatil.png',
+        click_action: 'https://bapspatil.com'
+    };
+
+    return self.registration.showNotification(notificationTitle,
+        notificationOptions);
+});
