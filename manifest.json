@@ -17,6 +17,5 @@
     "background_color": "#f70000",
     "start_url": "https://bapspatil.com",
     "display": "standalone",
-    "orientation": "portrait",
-    "gcm_sender_id": "103953800507"
+    "orientation": "portrait"
 }

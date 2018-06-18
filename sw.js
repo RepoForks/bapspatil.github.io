@@ -45,26 +45,3 @@ self.addEventListener('activate', function (e) {
     );
     self.clients.claim();
 });
-
-
-// Firebase 
-importScripts('https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/5.0.4/firebase-messaging.js');
-
-firebase.initializeApp({
-    'messagingSenderId': '514459664316'
-});
-var messaging = firebase.messaging();
-
-messaging.setBackgroundMessageHandler(function (payload) {
-    console.log('[Firebase] Received background message.', payload);
-    var notificationTitle = 'Bapusaheb Patil - New notification';
-    var notificationOptions = {
-        body: 'You have a new notification from Bapusaheb Patil!',
-        icon: 'img/bapspatil.png',
-        click_action: 'https://bapspatil.com'
-    };
-
-    return self.registration.showNotification(notificationTitle,
-        notificationOptions);
-});
