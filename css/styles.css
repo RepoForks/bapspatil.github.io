@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    font-family: 'Rubik', arial;
+    font-family: 'Overpass', arial;
     text-align: center;
     color: white;
     margin: 0;
@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 40px;
     -webkit-animation: font-size 200ms ease-in-out;
     transition: font-size 200ms ease-in-out;
