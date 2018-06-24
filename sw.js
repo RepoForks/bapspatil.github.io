@@ -9,7 +9,7 @@ var filesToCache = [
     'https://code.jquery.com/jquery-3.3.1.slim.min.js',
     'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
     'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js',
-    'https://fonts.googleapis.com/css?family=Overpass:300,400,600',
+    'https://fonts.googleapis.com/css?family=Montserrat:700|Rubik:300,400',
     'https://use.fontawesome.com/releases/v5.0.13/css/all.css'
 ];
 

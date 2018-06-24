@@ -6,7 +6,8 @@ html {
 }
 
 body {
-    font-family: 'Overpass', arial;
+    font-family: 'Rubik', arial;
+    font-weight: 300;
     text-align: center;
     color: white;
     margin: 0;
@@ -17,8 +18,9 @@ body {
 }
 
 h1 {
-    font-weight: 600;
-    font-size: 40px;
+    font-family: 'Montserrat', arial;
+    font-weight: 700;
+    font-size: 34px;
     -webkit-animation: font-size 200ms ease-in-out;
     transition: font-size 200ms ease-in-out;
 }
@@ -29,6 +31,7 @@ h1:hover {
 
 h4 {
     font-size: 24px;
+    font-weight: 300;
     -webkit-animation: font-size 200ms ease-in-out;
     transition: font-size 200ms ease-in-out;
 }
@@ -52,20 +55,28 @@ p {
 }
 
 .gradient {
-    background: -moz-linear-gradient(226deg, rgba(247, 0, 0, 1) 0%, rgba(0, 24, 163, 1) 100%);
-    background: -webkit-linear-gradient(226deg, rgba(247, 0, 0, 1) 0%, rgba(0, 24, 163, 1) 100%);
-    background: -o-linear-gradient(226deg, rgba(247, 0, 0, 1) 0%, rgba(0, 24, 163, 1) 100%);
-    background: -ms-linear-gradient(226deg, rgba(247, 0, 0, 1) 0%, rgba(0, 24, 163, 1) 100%);
-    background: linear-gradient(224deg, rgba(247, 0, 0, 1) 0%, rgba(0, 24, 163, 1) 100%);
-    -webkit-animation: fadein 2s;
-    /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s;
-    /* Firefox < 16 */
-    -ms-animation: fadein 2s;
-    /* Internet Explorer */
-    -o-animation: fadein 2s;
-    /* Opera < 12.1 */
-    animation: fadein 2s;
+    background: linear-gradient(270deg, #c62828, #0018a3);
+    background-size: 400% 400%;
+
+    -webkit-animation: GradientAnimation 12s ease infinite;
+    -moz-animation: GradientAnimation 12s ease infinite;
+    animation: GradientAnimation 12s ease infinite;
+}
+
+@-webkit-keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes GradientAnimation { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 @keyframes fadein {
