@@ -58,9 +58,9 @@ p {
     background: linear-gradient(270deg, #c62828, #0018a3);
     background-size: 400% 400%;
 
-    -webkit-animation: GradientAnimation 12s ease infinite;
-    -moz-animation: GradientAnimation 12s ease infinite;
-    animation: GradientAnimation 12s ease infinite;
+    -webkit-animation: GradientAnimation 6s ease infinite;
+    -moz-animation: GradientAnimation 6s ease infinite;
+    animation: GradientAnimation 6s ease infinite;
 }
 
 @-webkit-keyframes GradientAnimation {
