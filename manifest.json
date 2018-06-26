@@ -14,8 +14,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#c62828",
-    "background_color": "#c62828",
+    "theme_color": "#0018a3",
+    "background_color": "#0018a3",
     "start_url": "https://bapspatil.com",
     "display": "standalone",
     "orientation": "portrait"
