@@ -7,7 +7,7 @@ html {
 
 body {
     font-family: 'Rubik', arial;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     color: white;
     margin: 0;
@@ -43,15 +43,6 @@ h4:hover {
 p {
     padding-left: 5%;
     padding-right: 5%;
-}
-
-.main-content {
-    -webkit-animation: font-size 200ms ease-in-out;
-    transition: font-size 200ms ease-in-out;
-}
-
-.main-content:hover {
-    font-size: 18px;
 }
 
 .gradient {
