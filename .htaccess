@@ -1,5 +1,5 @@
 RewriteEngine on
 RewriteCond %{HTTP:Accept-Language} (fr) [NC]
-RewriteRule .* /fr/index.html [L]
+RewriteRule .* https://bapspatil.com/fr/ [L]
 RewriteCond %{HTTP:Accept-Language} (en) [NC]
-RewriteRule .* /index.html [L]
+RewriteRule .* https://bapspatil.com/ [L]
