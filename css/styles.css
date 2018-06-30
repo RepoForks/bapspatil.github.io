@@ -46,28 +46,28 @@ p {
 }
 
 .gradient {
-    background: linear-gradient(270deg, #c62828, #0018a3);
-    background-size: 400% 400%;
+    background: linear-gradient(1deg, #c2185b, #0018a3);
+background-size: 400% 400%;
 
-    -webkit-animation: GradientAnimation 6s ease infinite;
-    -moz-animation: GradientAnimation 6s ease infinite;
-    animation: GradientAnimation 6s ease infinite;
+-webkit-animation: GradientAnimation 8s ease-in-out infinite;
+-moz-animation: GradientAnimation 8s ease-in-out infinite;
+animation: GradientAnimation 8s ease-in-out infinite;
 }
 
 @-webkit-keyframes GradientAnimation {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
 }
 @-moz-keyframes GradientAnimation {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
 }
 @keyframes GradientAnimation { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
 }
 
 @keyframes fadein {
