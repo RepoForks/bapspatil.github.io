@@ -23,11 +23,17 @@ self.addEventListener('install', function (e) {
     );
 });
 
-self.addEventListener('fetch', function (event) {
-    console.log(event.request.url);
-    event.respondWith(
-        caches.match(event.request).then(function (response) {
-            return response || fetch(event.request);
+self.addEventListener('fetch', function (e) {
+    e.respondWith(
+        caches.match(e.request).then(function (r) {
+            console.log('[Service Worker] Fetching resource: ' + e.request.url);
+            return r || fetch(e.request).then(function (response) {
+                return caches.open(cacheName).then(function (cache) {
+                    console.log('[Service Worker] Caching new resource: ' + e.request.url);
+                    cache.put(e.request, response.clone());
+                    return response;
+                });
+            });
         })
     );
 });
